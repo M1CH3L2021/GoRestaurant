@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Form as Unform } from '@unform/web';
 
+interface FormProps {
+  ref: React.RefObject<unknown>
+}
+
 export const Form = styled(Unform)`
   padding: 48px 40px;
   display: flex;
